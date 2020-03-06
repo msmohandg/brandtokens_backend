@@ -19,4 +19,11 @@ router.post('/', (req, res, next) => {
 
 });
 
+
+router.get('/test', (req, res, next) => {
+
+    res.status(201).json({message: 'success'});
+
+});
+
 module.exports = router;
