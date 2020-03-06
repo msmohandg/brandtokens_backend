@@ -38,4 +38,11 @@ app.use(function(err, req, res, next) {
   });
 });
 
+app.listen(
+  process.env.PORT || 3000,
+  function () {
+    console.log('Frontend start on http://localhost:' + process.env.PORT);
+  }
+);
+
 module.exports = app;
